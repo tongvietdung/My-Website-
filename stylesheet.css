@@ -11,15 +11,37 @@
 
     }
 
+    /* Making the background fullscreen*/
     * {
         margin: 0;    
         padding: 0;
     }
 
+    /* Making smooth scroll*/
     html {
         scroll-behavior: smooth;        
     }
 
+    /* On Page Load Effect */
+    .load-effect {
+        position: fixed;
+
+        background-color: var(--outrageous-orange);
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+
+        animation-name: zoom-in;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes zoom-in{
+        100% {
+            opacity: 0;
+            z-index: -1;
+        }
+    }
     /*SECTION-----------------------------------------------------------------------------*/
     .section {
         height: 100vh;
@@ -71,9 +93,9 @@
         margin: 1vw;
         width: 9em;
         padding: 0.4em;
-
     }
 
+    /* Hover effect */
     .navigation-item:hover {
         box-shadow: 0.3em 0.4em 0em 0em black;
         animation-name: reverse-color;
@@ -128,6 +150,7 @@
     }
     
     /*SPECIFIC DECLARATION----------------------------------------------------------------*/
+    /* Links without underlined purpled*/
     a {
         text-decoration: none;
         color: inherit;

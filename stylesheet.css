@@ -167,6 +167,10 @@
         margin: 0vh 5vw 0vh 5vw;
     }
     
+    .svg-scale {
+        height: 8vmax;
+        width: 8vmax;
+    }
     /*SPECIFIC DECLARATION----------------------------------------------------------------*/
     /* Links without underlined purpled*/
     a {

@@ -15,7 +15,7 @@ $(document).ready(function () {
         /* If mouse is scrolled (which is the verticle position of BODY or the ROOT element is > 50px) */
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
             /* Find the navigation box and scale it down and move to the bottom of the screen */
-            document.getElementById('navigation').style.transform = "scale(0.8) translateY(30vh)";
+            document.getElementById('navigation').style.transform = "scale(0.8) translateY(35vh)";
             console.log(document.getElementById('navigation').style.transform);
             /* Find all items in navigation box and change its text color and background */
             for (let item of document.getElementsByClassName('navigation-item')) {
@@ -31,4 +31,13 @@ $(document).ready(function () {
             }
         }
     }
+
+    /* When hover game item, show panel */
+    $('th').hover(function () {
+            // over
+            
+        }, function () {
+            // out
+        }
+    );
 });

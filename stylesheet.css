@@ -24,22 +24,22 @@
 
     /* On Page Load Effect */
     .load-effect {
-        position: fixed;
-
-        background-color: var(--outrageous-orange);
-        height: 100%;
-        width: 100%;
-        z-index: 2;
-
         animation-name: zoom-in;
-        animation-duration: 1.5s;
+        animation-duration: 0.8s;
         animation-fill-mode: forwards;
     }
 
     @keyframes zoom-in{
+        0% {
+            transform: scale(0);
+        }
+
+        60% {
+            transform: scale(1.1);
+        }
+
         100% {
-            opacity: 0;
-            z-index: -1;
+            transform: scale(1);
         }
     }
     /*SECTION-----------------------------------------------------------------------------*/
@@ -79,6 +79,24 @@
 
         font-size: 1.5vmax;
         transition: 0.4s;
+
+        animation-name: fade-in;
+        animation-duration: 0.8s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes fade-in{
+        0% {
+            top: 110vh;
+        }
+
+        60% {
+            top: 55vh;
+        }
+
+        100% {
+            top: 60vh;
+        }
     }
 
     .navigation-item {

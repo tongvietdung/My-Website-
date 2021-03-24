@@ -13,7 +13,7 @@ $(document).ready(function () {
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
             /* Find the navigation box and scale it down and move to the bottom of the screen */
             document.getElementById('navigation').style.transform = "scale(0.8) translateY(30vh)";
-
+            console.log(document.getElementById('navigation').style.transform);
             /* Find all items in navigation box and change its text color and background */
             for (let item of document.getElementsByClassName('navigation-item')) {
                 item.style.color = raisinBlack;

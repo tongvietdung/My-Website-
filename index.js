@@ -2,6 +2,9 @@ $(document).ready(function () {
     var raisinBlack = "#252627ff";
     var outrageousOrange = "#fe6847ff";
 
+    /* Come back to top when reload */
+    $(window).scrollTop(0);
+
     /* When scroll, trigger the effect */
     window.onscroll = function() {
         scrollFunction()

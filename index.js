@@ -33,11 +33,4 @@ $(document).ready(function () {
     }
 
     /* When hover game item, show panel */
-    $('th').hover(function () {
-            // over
-            
-        }, function () {
-            // out
-        }
-    );
 });
